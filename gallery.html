@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <h1>Gallery of Quotes</h1>
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="1.jpg" class="gallery-item" onclick="openLightbox(0)">
+            <img src="2.jpg" class="gallery-item" onclick="openLightbox(1)">
+            <img src="3.jpg" class="gallery-item" onclick="openLightbox(2)">
+            <img src="4.jpg" class="gallery-item" onclick="openLightbox(3)">
+            <img src="5.jpg" class="gallery-item" onclick="openLightbox(4)">
+            <img src="6.jpg" class="gallery-item" onclick="openLightbox(5)">
+            <img src="7.jpg" class="gallery-item" onclick="openLightbox(6)">
+            <img src="8.jpg" class="gallery-item" onclick="openLightbox(7)">
+            <img src="9.jpg" class="gallery-item" onclick="openLightbox(8)">
+            <img src="10.jpg" class="gallery-item" onclick="openLightbox(9)">
+        </div>
+    </div>
+
+   <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" class="lightbox-content">
+    <p id="lightbox-caption" class="caption"></p>
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+    <button onclick="startSlideshow()" style="background-color: rgb(144, 137, 204);">Start Slideshow</button>
+    <button onclick="stopSlideshow()" style="background-color: rgb(189, 65, 85);">Stop Slideshow</button>
+</div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
